@@ -5,7 +5,7 @@
 
     <groupId>pl.mg</groupId>
     <artifactId>mg-kubernetes</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>mg-kubernetes</name>
@@ -48,6 +48,7 @@
     </dependencies>
 
     <build>
+        <finalName>mg-kubernetes</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

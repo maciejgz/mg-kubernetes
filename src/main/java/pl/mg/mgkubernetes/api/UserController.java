@@ -11,6 +11,6 @@ public class UserController {
 
   @GetMapping
   public ResponseEntity<String> apiCheck() {
-    return ResponseEntity.ok("User returned v1");
+    return ResponseEntity.ok("User v1");
   }
 }
