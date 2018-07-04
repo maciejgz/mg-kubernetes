@@ -32,5 +32,41 @@ port forwarding musi być ustawiony tak jak port w aplikacji
 przykład: <br />
 `http://192.168.99.100:8080`
 
+# kubernetes setup - minikube
+
+1. Instalacja minikube http://www.baeldung.com/spring-boot-minikube<br />
+**Ważne, żeby ustawić odpowiednie zmienne dokera w minikube, aby były widoczne obrazy lokalne wygenerowane w dockerze**:<br />
+`minikube docker-env` <br />
+Potem w power shellu:<br />
+`& minikube docker-env | Invoke-Expression` <br />
+lub w konsoli:<br />
+`eval $(minikube docker-env)`<br />
+Dzięki temu obrazy tworzone w doker lokalnym będą widoczne przez minikube. **Ważne, żeby ustawić zmienne i dopiero później dodawać obraz** i tylko wtedy będzie go widać w tym lokalnym repo. Wszystko trzeba wykonywać w jednej instancji konsoli.
+Standardowo docker ma własną przestrzeń obrazów, którą można sprawdzić przez:<br />
+`docker images`<br />
+
+2. Z utworzonego obrazu (jak w punkcie 1.2) tworzymy deployment w minikube:<br />
+`kubectl.exe run mg-kubernetes --image=mg-kubernetes:latest --port=8080 --image-pull-policy Never`
+
+3. Wyrzucamy serwis na zewnątrz:<br />
+`kubectl.exe expose deployment mg-kubernetes --type=NodePort`
+
+4. Aplikacja powinna być dostępna pod adresem wirtualki minikube i porcie pokazanym pod komendą:<br />
+`kubectl.exe get services`<br />
+np.<br />
+`http://192.168.99.101:30322/actuator/health`
+
+
+# kubernetes - konfiguracja klastrów
+- można ręcznie pisać YAMLe do tworzenia deploymentów, podów i serwisów i łądować je kubectl poprzez komendę<br />
+`kubectl.exe create -f <plik>`<br />
+daje to więcej możliwości konfiguracji
+
+
+
+# TODO:<br />
+- opisać update samego image oraz podmianki image w deploymencie kubernetesa
+- update strategies - różne rodzaje
+- dodać do repo yamle i przerobić sposób deploymentu na podstawie konfiguracji YAML
 
 
