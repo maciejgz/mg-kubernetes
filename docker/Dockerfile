@@ -11,5 +11,4 @@ CMD ["java", "-version"]
 #CMD ["ls", "/opt/mg-kubernetes/lib/"]
 CMD ["java", "-jar", "/opt/mg-kubernetes/lib/mg-kubernetes.jar"]
 
-
 EXPOSE 8080
