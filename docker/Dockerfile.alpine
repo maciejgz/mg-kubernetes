@@ -1,0 +1,6 @@
+## base alipne linux with java dockerfile. minimum for running spring bot app
+FROM alpine:edge
+MAINTAINER mg
+RUN apk add --no-cache openjdk8
+
+CMD ["java", "-version"]
