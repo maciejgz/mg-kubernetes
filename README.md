@@ -1,5 +1,5 @@
 # Spring integration with Kubernetes and Docker
-
+--master
 Sample Spring Boot app packed into Docker image with Minikube deployment description.
 
 # Docker 
