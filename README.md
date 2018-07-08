@@ -2,14 +2,13 @@
 
 Sample Spring Boot app packed into Docker image with Minikube deployment description.
 
-
 # Docker 
-konfiguracja w docker/dockerfile
-najlepiej wykorzystywać alpine linux, który jest najmniejszym dostępnym obrazem linuxa w repo dockera.
+Konfiguracja w docker/dockerfile.
+Najlepiej wykorzystywać obraz alpine linux, który jest najmniejszym dostępnym obrazem linuxa w repo dockera.
 
 Instalacja dockera na windows wymaga koniecznie: 
 1. Instalacji z docker tools
-2. wywołania: `docker-machine create box`
+2. Wywołania: `docker-machine create box`
 3. Wywoływania komend dockera z konsoli wymagają uprawnień administratora
 
 # Przygotowanie obrazów dockera i uruchomienie
