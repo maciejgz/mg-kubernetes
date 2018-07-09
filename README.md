@@ -1,5 +1,4 @@
 # Spring integration with Kubernetes and Docker
---pull request
 Sample Spring Boot app packed into Docker image with Minikube deployment description.
 
 # Docker 
