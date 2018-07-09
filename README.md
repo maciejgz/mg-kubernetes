@@ -60,10 +60,11 @@ np.<br />
 `kubectl.exe create -f <plik>`<br />
 daje to więcej możliwości konfiguracji
 
+MAIN CHANGES
 
 
 # TODO:<br />
-- opisać update samego image oraz podmianki image w deploymencie kubernetesa
+- MAIN update samego image oraz podmianki image w deploymencie kubernetesa
 - update strategies - różne rodzaje
 - dodać do repo yamle i przerobić sposób deploymentu na podstawie konfiguracji YAML
 
