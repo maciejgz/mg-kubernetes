@@ -1,4 +1,4 @@
 package pl.mg.mgkubernetes.api;
 
-public class SecondClass {
+public class ThirdClass {
 }

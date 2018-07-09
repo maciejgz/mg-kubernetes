@@ -64,7 +64,7 @@ MAIN CHANGES
 
 
 # TODO:<br />
-- MAIN update samego image oraz podmianki image w deploymencie kubernetesa
+- SIDE update samego image oraz podmianki image w deploymencie kubernetesa
 - update strategies - różne rodzaje
 - dodać do repo yamle i przerobić sposób deploymentu na podstawie konfiguracji YAML
 
